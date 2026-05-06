@@ -1,0 +1,13 @@
+{
+  "name": "Auto-Notes Architect",
+  "description": "An AI-powered tool that converts messy lecture audio or transcripts into structured study material including clean notes, key takeaways, summaries, and flashcards.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "Audio Transcription",
+    "NLP Structuring",
+    "Summarization",
+    "Flashcard Generation"
+  ]
+}
