@@ -14,7 +14,7 @@ export async function processText(
     },
     body: JSON.stringify({
       type: "text",
-      input: rawText,
+      input: rawText.slice(0, 4000),
     }),
   });
 
@@ -43,7 +43,7 @@ export async function processAudio(
     },
     body: JSON.stringify({
       type: "audio",
-      input: audioBase64,
+      input: audioBase64.slice(0, 5000),
       mimeType,
     }),
   });
