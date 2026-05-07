@@ -19,8 +19,9 @@ export async function processText(
   });
 
   if (!res.ok) {
-    throw new Error("Backend request failed");
-  }
+  const err = await res.text();
+  throw new Error("Backend error: " + err);
+}
 
   onProgress(PipelineStep.COMPLETED, "Study material ready!");
   return await res.json();
